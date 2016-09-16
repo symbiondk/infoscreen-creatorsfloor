@@ -1,0 +1,100 @@
+/*****************
+  Global styles
+******************/
+body {
+  background: #333;
+	font-family: $font-family-base;
+}
+@include media-breakpoint-up(sm) {
+  body {
+    background: #333 url(../inc/img/bg-grey.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: -moz-scrollbars-none;
+}
+.text-center {
+  text-align: center;
+}
+.na {
+  font-style:italic;
+}
+.no-padding {
+  padding:0;
+}
+.no-padding-l {
+  padding-left:0;
+}
+.no-padding-r {
+  padding-right:0;
+}
+form label {
+ margin-bottom: .2rem;
+}
+.main-content img {
+  margin-bottom: 15px;
+}
+.btn i {
+  margin-left: 7px;
+  font-size: 90%;
+}
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-gutter-left {
+  padding-left: 0;
+}
+.no-gutter-right {
+  padding-right: 0;
+}
+ul.no-style-list {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.title-meta {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+.title-meta i {
+  margin:0 5px;
+}
+/*****************
+  Sticky footer
+******************/
+
+.footer-bar {
+  padding: .5rem;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  color: #fff;
+  z-index: 1;
+}
+.footer-bar h1 {
+  text-align: left;
+}
+@include media-breakpoint-down(md) { 
+  .footer-bar {
+    position:initial;
+    margin-top:10px;
+  }
+}
+/*****************
+  Disable modal
+******************/
+.modal.fade {
+  opacity: 1;
+}
+
+.modal.fade .modal-dialog, .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}

@@ -1,0 +1,27 @@
+  // y-grid rows
+
+@include media-breakpoint-up(lg) {  
+	@for $i from 1 through 12 {
+	  .vh-lg-#{$i} {
+	    // Only needed if used outside Bootstrap
+	    //box-sizing: border-box;
+	    height: ($i/12)*100vh;
+	    overflow-y: scroll;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	    overflow: -moz-scrollbars-none;
+	  }
+	}
+}
+@include media-breakpoint-up(lg) {  
+	@for $i from 1 through 12 {
+	  .min-vh-lg-#{$i} {
+	    // Only needed if used outside Bootstrap
+	    //box-sizing: border-box;
+	    min-height: ($i/12)*100vh;
+	    overflow-y: scroll;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	    overflow: -moz-scrollbars-none;
+	  }
+	}
+}
+.y-grid .card { height: 100%;}

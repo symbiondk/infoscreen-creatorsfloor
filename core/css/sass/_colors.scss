@@ -1,0 +1,44 @@
+
+/* Colors */
+$symbion-primary: $brand-primary;
+$creators-primary: #1a6db4;
+$lightondark: rgba(255,255,255,0.9);
+$darkonlight: rgba(0,0,0,0.8);
+$magenta: #C23B79;
+$bright-orange: #F25C25;
+$tomato-red: #DA2B17;
+$cyan: #13A7CB;
+$moss: #62A74B;
+
+$taxi-yellow: #edc60e;
+$petroleum-green: #306261;
+$midnightblue: rgb(24, 27, 46);
+
+/***********************
+  Themes / backgrounds 
+*************************/
+
+$theme_colors: 	
+(petroleum, $petroleum-green),
+(moss, $moss),
+(symbion, $symbion-primary),
+(creators, $creators-primary),
+(creators-darker, darken($creators-primary,20%)),
+(magenta, $magenta),
+(cyan, $cyan),
+(midnightblue, $midnightblue),
+(taxi-yellow, $taxi-yellow);
+
+
+@each $theme, $color in $theme_colors {
+  .bg-#{$theme} {
+    background-color: $color;
+    color: lighten($color,50%);
+    & a {
+      color: lighten($color,50%);
+    }
+    & .text-muted {
+      color: lighten($color,20%);
+    }  
+  }
+}

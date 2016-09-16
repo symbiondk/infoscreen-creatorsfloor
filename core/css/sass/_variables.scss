@@ -1,0 +1,53 @@
+
+/* border radius */
+$border-radius-base: 2px !default;
+$border-radius-small: 1px !default;
+
+/* SHADOWS */
+$mdb-shadow-key-umbra-opacity: 0.2 !default;
+$mdb-shadow-key-penumbra-opacity: 0.14 !default;
+$mdb-shadow-ambient-shadow-opacity: 0.12 !default;
+
+/* Typography */
+$font-family-base: 'Roboto', sans-serif;
+
+h1,h2,h3,h4,h5 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+h1 { font-size: 2.5rem;}
+h2 {font-size: 1.6rem;}
+h3 {font-size: 1.2rem;}
+
+.fancy-title {
+	font-family: 'Oswald', sans-serif;
+}
+h1.title {
+	color: inherit;
+	line-height: 1;
+	text-align: center;
+	font-size: 15px;
+	margin:0;
+}
+.subtitle {
+	font-weight:700;
+	font-size: 80%;
+}
+a:focus, a:hover {
+	text-decoration: none;
+}
+@media only screen and (min-width: 1400px) {
+  html {
+  	font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+  	font-size: 22px;
+  }
+}
+@media only screen and (min-width: 2200px) {
+  html {
+  	font-size: 24px;
+  }
+}

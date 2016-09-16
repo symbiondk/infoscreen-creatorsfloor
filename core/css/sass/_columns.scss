@@ -1,0 +1,19 @@
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+  max-height: 100vh;
+  -moz-column-gap: 0;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+  line-height: 0;
+}
+.card-columns p {
+  line-height:1.5;
+}
+.card {
+	margin-bottom:0;
+}

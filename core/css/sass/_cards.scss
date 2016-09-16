@@ -1,0 +1,35 @@
+.card {
+    margin:0;
+    max-height: 100vh;
+    overflow-y:scroll;
+    //margin-top:1.875rem;
+    border:0;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow: -moz-scrollbars-none;
+}
+.card::-webkit-scrollbar { width: 0 !important }
+.card .card-img-top {
+	width:100%;
+}
+@media only screen and (min-width: 2000px) {
+  	.room-feed .row.room {
+  		line-height: 150%;
+  }
+}
+.card h3 {font-size: 1.0rem;}
+/**************
+	Ugemenu
+***************/
+.menu .menu-item {
+	font-size: 0.9rem;
+	line-height: 1.9;
+}
+.menu-item .day {
+	font-weight: 700;
+}
+.menu .legend {
+	font-size: 0.8rem;
+	font-style: italic;
+	margin-top:5px;
+	color: rgba(255,255,255,0.5)
+}
